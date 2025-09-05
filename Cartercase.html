@@ -1,15 +1,166 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>The Carter Case</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Quick Reads - Short Stories for Everyone" />
+  <style>
+    :root{
+      --bg:#f3f4f6;
+      --card:#ffffff;
+      --accent:#0b63d6;
+      --muted:#6b7280;
+      --shadow: 0 6px 18px rgba(11,12,13,0.08);
+      --radius:12px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+      background:var(--bg);
+      color:#111827;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    header{
+      background:#0b1220;
+      color:white;
+      padding:28px 16px;
+      text-align:center;
+    }
+    header h1{margin:0;font-size:28px;letter-spacing:0.4px}
+    header p{margin:6px 0 0;color:#bfc7d6}
+
+    main{
+      max-width:960px;
+      margin:28px auto;
+      padding:0 16px 60px;
+    }
+
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:20px;
+      margin-bottom:18px;
+      overflow:visible;
+    }
+
+    .story-header{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      justify-content:space-between;
+    }
+    .title-row{
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+    h2.story-title{
+      margin:0;
+      font-size:20px;
+    }
+    .meta{
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    /* rating stars */
+    .stars{
+      display:inline-flex;
+      gap:4px;
+      align-items:center;
+      user-select:none;
+    }
+    .star{
+      width:20px;
+      height:20px;
+      display:inline-block;
+      cursor:pointer;
+      transform-origin:center;
+      transition:transform .12s;
+    }
+    .star svg{width:100%;height:100%;display:block}
+    .star:hover{transform:scale(1.08)}
+    .rating-value{
+      margin-left:8px;
+      color:var(--muted);
+      font-weight:600;
+      font-size:14px;
+    }
+
+    .story-body{
+      margin-top:14px;
+      line-height:1.65;
+      color:#1f2937;
+      white-space:pre-wrap;
+    }
+
+    /* comments */
+    .comments{
+      margin-top:16px;
+      border-top:1px dashed #e6e9ef;
+      padding-top:14px;
+    }
+    .comment{
+      margin-bottom:10px;
+      background:#f8fafc;
+      padding:8px 10px;
+      border-radius:8px;
+      font-size:14px;
+      color:#111827;
+    }
+    .comment small{color:var(--muted);display:block;font-size:12px}
+
+    .comment-form{
+      display:flex;
+      gap:8px;
+      margin-top:8px;
+    }
+    .comment-form input{
+      flex:1;
+      padding:8px 10px;
+      border-radius:8px;
+      border:1px solid #e6e9ef;
+      font-size:14px;
+    }
+    .btn{
+      background:var(--accent);
+      color:white;
+      border:none;
+      padding:8px 12px;
+      border-radius:8px;
+      cursor:pointer;
+      font-weight:600;
+    }
+    .btn:active{transform:translateY(1px)}
+    footer{
+      text-align:center;
+      padding:20px 16px;
+      margin-top:18px;
+      color:red;
+      background:#0b1220;
+      font-size:14px;
+    }
+
+    /* small view */
+    @media (max-width:520px){
+      header h1{font-size:20px}
+      .star{width:18px;height:18px}
+    }
+  </style>
 </head>
 <body>
-  <main>
+  <header>
     <h1>The Carter Case</h1>
-    PART I: MURDER IN THE OUTBACKS<br><br>
+  </header>
+
+  <main id="main">
+    <!-- Story cards will be injected here by JS -->
+      PART I: MURDER IN THE OUTBACKS<br><br>
 
 A scream. A thud. Police sirens going their usual rhythmic tone of 'Wee Woo'- loud enough to wake any sleeping,
  child, and the annoying chatter, not to mention that police sirens were equally annoying too, were the sound of reporters asking the very set of questions they always do. These were the sounds the residents near the house of Mrs. Evelyn Carter- Canning city's mayor, heard, around 6 in the morning on the dreadful date of June 4th. And if it wasn't obvious enough, Mrs. Carter had fallen two stories to her death and, thus, the conundrum.<br><br>
@@ -253,7 +404,7 @@ Arthur too fled city, catching the next train to an unknown destination. It was 
 
 An happy ending came over the city of Canning. The new mayor,   was a better one compared to Vincent-a relief for the people.<br><br>
 
-A few months passed by. The city had been slowly healing and had moved on from the tragedy, seen from the plaque for both the Garcia's and Mrs. Evelyn placd on the city hall, the mayor, playing her part in all of this.<br><br> 
+A few months passed by. The city had been slowly healing and had moved on from the tragedy, seen from the plaque for both the Garcia's and Mrs. Evelyn placed on the city hall, the mayor, playing her part in all of this.<br><br> 
 
 Garcia found peace again, but also felt a part of him missing too. He got his job back. The people of the town regrew their trust in him. Garcia's icing on the cake being that he got his job back, the one he maintained before the scandal. Life had forgiven the man and he in turn thanked it for this. <br><br>
 
@@ -263,8 +414,10 @@ Arthur stayed low for a few months before becoming a detective at a trusted agen
 
 It was a fairy tale ending for both the city of Canning, and the the two that fled the city. <br><br>
 
-<hr></p>
-    <p><a href="https://quickreadsoriginal.github.io/QROfficial/github.html"> Back to Quick Reads</a></p>
+<hr>
+       <a href='https://quickreadsoriginal.github.io/QROfficial/github.html'> Back</a>
+   
   </main>
-</body>
+
+ </body>
 </html>
