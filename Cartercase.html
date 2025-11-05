@@ -1,15 +1,14 @@
-<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>The Cave Of The Dead</title>
+  <title>Halloween Special: The Cave Of The Dead</title>
   <meta name="description" content="Quick Reads - Short Stories for Everyone" />
   <style>
     :root{
       --bg:#f3f4f6;
       --card:#ffffff;
-      --accent:#111827;
+      --accent:#0b63d6;
       --muted:#6b7280;
       --shadow: 0 6px 18px rgba(11,12,13,0.08);
       --radius:12px;
@@ -23,6 +22,7 @@
       -webkit-font-smoothing:antialiased;
       -moz-osx-font-smoothing:grayscale;
     }
+
     header{
       background:#0b1220;
       color:white;
@@ -30,52 +30,137 @@
       text-align:center;
     }
     header h1{margin:0;font-size:28px;letter-spacing:0.4px}
+    header p{margin:6px 0 0;color:#bfc7d6}
+
     main{
       max-width:960px;
       margin:28px auto;
       padding:0 16px 60px;
     }
+
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:20px;
+      margin-bottom:18px;
+      overflow:visible;
+    }
+
+    .story-header{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      justify-content:space-between;
+    }
+    .title-row{
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+    h2.story-title{
+      margin:0;
+      font-size:20px;
+    }
+    .meta{
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    /* rating stars */
+    .stars{
+      display:inline-flex;
+      gap:4px;
+      align-items:center;
+      user-select:none;
+    }
+    .star{
+      width:20px;
+      height:20px;
+      display:inline-block;
+      cursor:pointer;
+      transform-origin:center;
+      transition:transform .12s;
+    }
+    .star svg{width:100%;height:100%;display:block}
+    .star:hover{transform:scale(1.08)}
+    .rating-value{
+      margin-left:8px;
+      color:var(--muted);
+      font-weight:600;
+      font-size:14px;
+    }
+
     .story-body{
+      margin-top:14px;
       line-height:1.65;
       color:#1f2937;
       white-space:pre-wrap;
     }
-    hr{margin:24px 0; border:none; border-top:1px dashed #e6e9ef;}
-    .btn {
-      display: inline-block;
-      background: var(--accent);
-      color: #fff;
-      padding: 10px 16px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 600;
-      cursor: pointer;
-      transition: background 0.3s, transform 0.1s;
-      margin-top:24px;
+
+    /* comments */
+    .comments{
+      margin-top:16px;
+      border-top:1px dashed #e6e9ef;
+      padding-top:14px;
     }
-    .btn:hover { background:#1f2937; }
-    .btn:active { transform: translateY(1px); }
+    .comment{
+      margin-bottom:10px;
+      background:#f8fafc;
+      padding:8px 10px;
+      border-radius:8px;
+      font-size:14px;
+      color:#111827;
+    }
+    .comment small{color:var(--muted);display:block;font-size:12px}
+
+    .comment-form{
+      display:flex;
+      gap:8px;
+      margin-top:8px;
+    }
+    .comment-form input{
+      flex:1;
+      padding:8px 10px;
+      border-radius:8px;
+      border:1px solid #e6e9ef;
+      font-size:14px;
+    }
+    .btn{
+      background:var(--accent);
+      color:white;
+      border:none;
+      padding:8px 12px;
+      border-radius:8px;
+      cursor:pointer;
+      font-weight:600;
+    }
+    .btn:active{transform:translateY(1px)}
     footer{
       text-align:center;
       padding:20px 16px;
-      margin-top:40px;
-      color:#fff;
+      margin-top:18px;
+      color:red;
       background:#0b1220;
       font-size:14px;
     }
-    @media(max-width:520px){
+
+    /* small view */
+    @media (max-width:520px){
       header h1{font-size:20px}
+      .star{width:18px;height:18px}
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>The Carter Case</h1>
+    <h1>The Cave Of The Dead</h1>
   </header>
 
   <main id="main">
-    <div class="story-body">
-     PART I: MURDER IN THE OUTBACKS<br><br>
+    <!-- The Carter Case -->
+
+PART I: MURDER IN THE OUTBACKS<br><br>
 
 A scream. A thud. Police sirens going their usual rhythmic tone of 'Wee Woo'- loud enough to wake any sleeping,
  child, and the annoying chatter, not to mention that police sirens were equally annoying too, were the sound of reporters asking the very set of questions they always do. These were the sounds the residents near the house of Mrs. Evelyn Carter- Canning city's mayor, heard, around 6 in the morning on the dreadful date of June 4th. And if it wasn't obvious enough, Mrs. Carter had fallen two stories to her death and, thus, the conundrum.<br><br>
@@ -332,12 +417,7 @@ It was a fairy tale ending for both the city of Canning, and the the two that fl
 <hr>
 
 
-      <a href="https://quickreadsoriginal.github.io/QROfficial/github.html" class="btn">Back</a>
-    </div>
+    <a href="https://quickreadsoriginal.github.io/QROfficial/github.html" class="btn"> Back</a>
   </main>
-
-  <footer>
-    Quick Reads
-  </footer>
 </body>
-</html>
+                                                                                                                                                                                                                                </html>
