@@ -1,0 +1,419 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>The Rookie Mission</title>
+  <meta name="description" content="Quick Reads - Short Stories for Everyone" />
+  <style>
+    :root{
+      --bg:#f3f4f6;
+      --card:#ffffff;
+      --accent:#0b63d6;
+      --muted:#6b7280;
+      --shadow: 0 6px 18px rgba(11,12,13,0.08);
+      --radius:12px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+      background:var(--bg);
+      color:#111827;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    header{
+      background:#0b1220;
+      color:white;
+      padding:28px 16px;
+      text-align:center;
+        background-color:red
+    }
+    header h1{margin:0;font-size:28px;letter-spacing:0.4px}
+    header p{margin:6px 0 0;color:#bfc7d6}
+
+    main{
+      max-width:960px;
+      margin:28px auto;
+      padding:0 16px 60px;
+    }
+
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:20px;
+      margin-bottom:18px;
+      overflow:visible;
+    }
+
+    .story-header{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      justify-content:space-between;
+    }
+    .title-row{
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+    h2.story-title{
+      margin:0;
+      font-size:20px;
+    }
+    .meta{
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    /* rating stars */
+    .stars{
+      display:inline-flex;
+      gap:4px;
+      align-items:center;
+      user-select:none;
+    }
+    .star{
+      width:20px;
+      height:20px;
+      display:inline-block;
+      cursor:pointer;
+      transform-origin:center;
+      transition:transform .12s;
+    }
+    .star svg{width:100%;height:100%;display:block}
+    .star:hover{transform:scale(1.08)}
+    .rating-value{
+      margin-left:8px;
+      color:var(--muted);
+      font-weight:600;
+      font-size:14px;
+    }
+
+    .story-body{
+      margin-top:14px;
+      line-height:1.65;
+      color:#1f2937;
+      white-space:pre-wrap;
+    }
+
+    /* comments */
+    .comments{
+      margin-top:16px;
+      border-top:1px dashed #e6e9ef;
+      padding-top:14px;
+    }
+    .comment{
+      margin-bottom:10px;
+      background:#f8fafc;
+      padding:8px 10px;
+      border-radius:8px;
+      font-size:14px;
+      color:#111827;
+    }
+    .comment small{color:var(--muted);display:block;font-size:12px}
+
+    .comment-form{
+      display:flex;
+      gap:8px;
+      margin-top:8px;
+    }
+    .comment-form input{
+      flex:1;
+      padding:8px 10px;
+      border-radius:8px;
+      border:1px solid #e6e9ef;
+      font-size:14px;
+    }
+    .btn{
+      background:var(--accent);
+      color:white;
+      border:none;
+      padding:8px 12px;
+      border-radius:8px;
+      cursor:pointer;
+      font-weight:600;
+    }
+    .btn:active{transform:translateY(1px)}
+    footer{
+      text-align:center;
+      padding:20px 16px;
+      margin-top:18px;
+      color:red;
+      background:#0b1220;
+      font-size:14px;
+    }
+
+    /* small view */
+    @media (max-width:520px){
+      header h1{font-size:20px}
+      .star{width:18px;height:18px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Rookie Mission</h1>
+  </header>
+
+  <main id="main">
+    <!-- Story cards will be injected here by JS -->
+
+  <!-- The Rookie Mission --> 
+<b>PART I: MISSION ABORT</b><br>
+<i>KLT SCHOOL BASEMENT CANNING</i><br>
+The school gates were pushed in. A mysterious figure ran in, catching the two rows of people on either side of the hall by surprise. They turned their heads in unison. It was Olise. “Where’s Seb?” He frantically asked. Some of the ones standing in the lines broke free from shoving what seemed to be cotton and turned their fingers to an ominous back door. Olise continued running.<br><br>
+
+Olise entered the room. Inside, the yellow ceiling light shined on a figure, which cast a long and devilish shadow on the ground.<br><br>
+
+From the shadow, anyone could identify the person’s physical features. A well built body, with an impressive straight posture. A cigarette lit in his mouth, smoke dangling in the air, and a high-tech headset to block out the noises from the gunshots.<br><br>
+
+<ins>BANG! BANG! BANG!</ins><br><br>
+
+The shots hitting the chest and the head of the lifeless fabric-covered statue. Olise appeared before him. Bent, with both hands on either knees, and audibly panting. <br><br>
+
+“Seb… problem…”<br>
+Seb hadn’t turned. He continued with one more shot. This time, hitting the mannequin right in its chest.<br>
+“Yuri called. The load got intercepted by the dock.”<br>
+Seb kept the gun by a table, and with taking the cigarette between his index and middle fingers, he uttered,<br>
+“Who?”<br>
+“Rookies. Someone tipped the department.”<br>
+"Vincent's taking care of it, isn’t he?”<br>
+Silence aroused them for a moment.<br>
+“Answer me.”<br>
+“He’s dead. Killed himself.”<br>
+With a grunt, and a curse, he sat on a three-legged stool. He puffed the cigarette in. Then another. And then finally made a plan.<br>
+“Hunt the Rookies down. I need them by dawn. Alive”<br>
+Olise nodded and ran, this time accompanied by a sense of adrenaline. The ‘boys’ were done packing for their second load to send out later that night, Olise let out an ear piercing whistle.<br>
+“Listen up. The boss wants the rookies by dawn. The load is postponed. Whoever brings them alive, boss promises a lifetime settlement”<br>
+A second or two clocked by, then chaos erupted. They got into trucks and vans, and drove for the heads of those rookies.<br>
+Olise reported downstairs, “Boys are sent.”<br>
+“You’re done here. Go”<br>
+“Thanks sir,” Olise smiled at him. How dare he. The bearer of an ill message, how could he walk scott-free. Seb gripped the pistol and<br>
+<u>BANG!</u><br>
+Blood spread all over the white porcelain tiles. His body warped and he stopped breathing. With the remaining 2 bullets in the pistol, Seb drove one into his head, and one into his heart.<br>
+<u>BANG!</u><u>BANG!</u><br>
+<hr>
+
+<b>PART II: A CUP OF BEER AND BLOOD</b><br>
+<h3>21 HOURS AGO</h3>
+“And y’know what that old chap says to me?” <br>
+“Go on then”<br>
+With a few hiccups and almost dropping the cigar on the concrete road, Oscar finally utters, “HE’s the bastard”<br>
+Oscar and Cisco laughed at this. The officers were posted at the Canning checkpoint in the death of night. Nor any prey, nor any predators stepped out at this hour. They leaned on the hood of their car, sharing a pair of cigarette.<br>
+“So, Oscar, sir, next week's the ceremony right? Excited for Germany?”<br>
+Oscar smiled. He thought for a while. He wanted to retire from service, and find a happy place for his family, and for the two of his sons.“It’s never easy saying goodbye, you know. But, I need to do my duty well - as a father too. Germany is THE perfect place for them, Cis.’”<br><br>
+
+Oscar wanted to continue, but was disrupted by the loud, roaring engine of a van approaching them. Apparently the speed limit sign a mile back had no effect on them. Cisco, under his sergeant’s command, stopped the vehicle.<br><br>
+
+Inside were three. And from their age, they seemed to be around their 20s. A stout looking boy driving, a feeble girl in the passenger seat, and from a streak of light that managed to come in from an open window, a burly, tall boy, facing the officer.<br><br>
+
+“Where ya’ going?”<br>
+“Sir, we were just going to a school function just a couple miles up,” the girl answered, in a helpless and futile voice.<br>
+“Do I look like a fool? School function at 1 in the morning?”<br>
+“Sir,” the driver spoke, “just cut us some slack. Is a 20p good?”<br>
+“Bribing me now?” Cisco erupted.<br>
+“Cisco? What’s the noise?” Oscar demanded as he approached the vehicle, and looked inside. As soon as he got a look at their faces, he knew something was up.<br>
+“Where ya’ kids off to? Show us the back.”<br>
+“Sir, sir, please,” pleaded the three, “fine us, please, but just let us go.”<br>
+“Show us the bloody back!” He gestured Cisco to open and check.<br><br>
+
+Cisco reached for the handle of the trunk, gripped it, and flung the back door open. A shot was heard. Cisco was on the floor, Oscar’s face went pale, and the burly one got out of the van, with a gun in his hand. He approached the senior officer with a merciless expression in his face, that was ready to pull the trigger anytime.<br><br>
+
+They met eye-to-eye, and Oscar was now helpless. His eyes wandered, and he noticed his radio on the hood of his car. If he could somehow signal the others. He reached for it. The radio dropped, and so did he. He clenched his stomach and was drowning in his own blood, and the three drove off.<br><br>
+
+“Officers… down… requesting … immediate… Backup!” He uttered into his radio, and after seeing Cisco’s lifeless body, he dozed off.<br>
+<hr>
+
+<b>PART III: MAYDAY! MAYDAY!</b><br>
+<i>CANNING POLICE STATION</i><br>
+“Bravo-Trojan, come in. Repeat, Bravo-Trojan come in. Over.” The stern voice from the radio echoed throughout the station, where two rookie officers - Jules and Maria were kept as patrol officers.<br>.<br>
+
+Maria responded, “This is Bravo responding. Over.”.<br>
+“Officers at the checkpoint are down. We got a tip-off that the killers are transporting illegal arms. Go undercover and capture them. Now. Vehicle will reachHuskisson in 10. Nab them there. ” The static ended..<br>
+The rookies shared a glance, and then got to work. Nab them by Huskisson. A simple in and out..<br>.<br>
+
+The van was in conundrum. The three argued over the incident..<br>
+“Why the hell did you do that? Could have bribed them off.” Terry squealed to Yasir in the back.<br>
+“And did that work? Tell me Terry, did it?”.<br>
+“Guys! Enough! Just focus on delivering the box by dusk. Drive now.” Alexa stopped the argument. The box was to be dropped by the port by dusk, and they were running out of time..<br>.<br>
+
+From the light emitted by the headlights, they could make out the silhouettes of two travellers in dark clothing. A hand was raised, then the van stopped. .<br>.<br>
+
+“Hey guys. My friend and I needed a drop off. Could you please help here? We’re lost, it’s really late, and we are supposed to cross the river by ship. Please?” The male asked..<br>
+“Where to?”.<br>
+“The Royal Dock.” The female answered..<br>
+The three looked at each other. They shouldn’t let anyone in. It was unethical. But they gave in.  With the remaining small humanity in them, they decided to help them. Besides, the dock was on the route to the port..<br>.<br>
+
+The hitchhikers got their ride. Unbeknownst to the three, the two they let in were the rookies. Maria and Jules shared a quick glance, and in proud manner, They were now in, and just had to nab them by the next checkpoint..<br>
+<hr>
+
+<b>PART IV: SHEEP IN WOLF’S DISGUISE</b><br>
+The van reached a mile. They still had 5 kilometres before the last checkpoint. <br>
+“So, we haven't met yet”, Jules tried to initiate small talk, “I’m Pom, this is Megan, we’re fr-”<br>
+“Nobody cares,” Yasir interrupted.<br>
+“I mean someone does, right?” Yasir shared with a fiery look, which managed to shut Jules.<br>
+Just then, Maria received a text. It was Major Et.<br><br>
+<i style="display: block; text-align: center; color: green;">STATUS?</i><br>
+<i style="display: block; text-align: center; color: blue;">5KM LEFT. NO SUSPICION YET.</i><br>
+<i style="display: block; text-align: center; color: green;">GOOD. TEAM IS BEING PREPARED. ADRIAN’S IN</i><br>
+<i style="display: block; text-align: center; color: blue;">ABSOLUTELY SIR</i><br>
+<i style="display: block; text-align: center; color: green;">WILL RECEIVE NEW PHONES BY 2.5. BE READY. SWITCH THE CELL OFF</i><br>
+
+
+
+Maria did as she was told. By hiding the phone from Yasir’s line of sight, she pry opened the device and took out the SIM. Maria nodded in Jules direction. He got the signal, and let out a nasty sneeze. Maria, with her heartbeat quickening with each second, threw the phone out.<br><br>
+
+ They were now walking on thin ice. One wrong move, the operation’s gone.<br>
+<hr>
+
+<b>PART V: SHAMBLES </b><br>
+“Boys, we have about 5 kilometres left to pull off this mission.” Major Et entered the room, and addressing his team of 6 standing around a circular wooden table, he continued the brief.<br><br>
+
+“This is the best tim to nab Seb in England. We will not have a better time than this. Adrian, you will lead the team. Z, you get footage from all CCTV sites from Canning to the dock. And the rest, go with Adrian. Do not mess this up.”<br>
+
+Back in the van,  Alexa’s phone lit up.<br><br>
+
+<i style="display: block; text-align: center; color: green;">Be careful. They’re planning something.</i><br>
+She showed the message to her accomplices, to which they became slightly more alert.<br><br>
+
+Maria and Jules counted the distance to go. Right about in two blocks, they were to receive new phones, as instructed by the major.<br><br>
+
+<h2>387 KM TO GO</h2><br><br>
+
+The van inched closer to the second block. Jules got a text,<br><br>
+
+<i style="display: block; text-align: center; color: green;">B.O.P Bakery.</i><br><br>
+
+And they spotted it. A well lit fiasco, standing tall in the middle of the surrounding restaurants.<br><br>
+
+“Any of you feel hungry?” Jules asked around. Alexa seemed to be. Terry too. Yasir sat there still, like a lifeless doll. “There’s few spots here, shall we get something to eat?”<br><br>
+
+Terry signaled him to go ahead. Jules and Maria got off. They blended in with the crowd, walking into the cafe.<br><br>
+
+“Mr. Luo?” The two asked around. They had some sort of an idea that he was the one to be asking around.<br>
+“Yes. How may I be of help?”<br>
+“Police. Et’s men,” they said, showing him their badges,<br>
+He took two boxes for caramel chocolate out. Inside, two brandished and police graded mobile phones. “Et’s and team’s contact has been saved here. Call them once you have about a  mile to go.”<br><br>
+
+The rookies walked out. They approached the van, safeguarding their phones to prevent any suspicion. The three waited for them, and once they saw them walk out with some bars of chocolates, their hunger seemed to vanish, except for Yasir’s. He had nothing to say.<br><br>
+
+“They have 2 miles left. Be alert. Very alert. Z, did you ask about the port?”<br>
+“Yes sir,. They are expecting a French courier ship by the next two hours.”<br>
+“Good, Adrian. Get ready by the route. Nab them as soon as we get the chance.”<br>
+“Absolutely Sir.”<br><br>
+
+<i style="display: block; text-align: center; color: green;">Watch out. Plan after 2 miles. Take different route.</i><br>
+Alexa looked at the text and then Terry in concern. They had to take a different route, and quickly. Terry turned the van. Maria noticed this. Something was off. She knew the city. To get to the port shorter, this was not the way. <br><br>
+
+<i style="display: block; text-align: center; color: green;">THEY KNOW SOMETHING</i><br>
+Aria texted Et. <br>
+Major Et received the text, and almost instantly called Adrian.<br>
+“Adrian, our plan’s compromised. We didn't guess them right. What’s your plan?”<br>
+“I’ll get to you sir.”<br>
+“Adrian. What’s wrong,” a member in his team asked as they pulled over to the side of the road. They were already en route to the original predicted place, but now, that was useless.<br>
+“They have a different strategy,” he replied in a thick Ukrainian accent, “We need to do something else. Get me in touch with Z, and ask him to track the numbers of those kids..”<br><br>
+
+
+<i style="display: block; text-align: center; color: green;">NUMBERS OF THOSE KIDS. NOW.</i><br>
+Adrian contacted them.<br>
+Maria, acting on the prompt asked, <br>
+“Hey Alexa, right? You know, when I repay someone that has helped me it has always been you know, going out, or having a party.”<br>
+“And?”
+“So, I know we can’t do this now, so can I get something to contact you?”<br><br>
+
+Jules' expression, which was easily readable, seemed to ask what his partner was up to.<br>
+“875559,” Alexa responded.<br>
+She typed the numbers as the number was dictated.<br>
+Adrian received the number.. “Here. Ask Z to track the GPS of the number.”<br>
+“Sir, why not the numbers of the rookies?”<br>
+“Their numbers have been made untraceable. No chance of going there. The girl’s old phone was traceable. The new phones aren’t.”<br>
+“Sir, if we turn, we can get to them in 2-and-a-half hours.”<br>
+“Message the rookies to get  them to infiltrate the ones in the van when we call for it.”<br>
+Adrian ordered for immediate action, and reported it back to Major Et.<br>
+<hr>
+<b>PART VI: MESSSENGER </b><br>
+“Good job Adrian. This is exactly what we want. Now, take the meadows as a place to capture them. Good luck to TASX and you.” Et, on hearing the news given to him by Adrian, answered to him. “Keep this highly confidential.”<br><br>
+
+Back in the van, Terry’s phone lit up.<br>
+<i style="display: block; text-align: center; color: green;">CHANGE ROUTE NOW!</i><br>
+
+
+He showed the message to Alexa. Another change of plans.<br>
+
+The van took the closest U-Turn. Yasir noted the hitchhikers. They were asleep. They had a lesser risk of getting caught now.<br><br>
+
+Back in the TASX car, Z called Adrian.<br>
+“Yes?”<br>
+“Sir, they have changed their route back.”<br>
+“What?”<br>
+“Yes sir, please change your plans immediately.”<br>
+Adrian let out a gruesome scream.<br>
+“How are the shits realising this? Turn the car ‘round Penn.”<br>
+“Sir, may I ask something? How are they accurately predicting our plans? It’s not a coincidence.”<br>
+Adrian’s eyes lit up. The driver, Penn, was right. How? And how it is right after they make their plans?<br><br>
+
+Adrian called Et there and then. “Sir, there’s a mole in the office. Seize everyone’s phones right now.”<br>
+Et did as he was told, and a final text was sent to Alexa,<br><br>
+
+<i style="display: block; text-align: center; color: green;">ON YOUR OWN</i><br>
+<hr>
+<b>PART VII: THE LAST MILE</b><br>
+All the parties concerned were alert.<br>
+The 6-men TASX Team.<br>
+The Rookies.<br>
+And the transporters.<br><br>
+
+Just execution was enough.<br><br>
+
+Just half a mile to go. Maria jolted awake and checked her surroundings. The route changed once again. Did it? Or is she just dreaming? No, it did change.<br>
+She tapped on the knee of Jules, who sat opposite. Jules woke, and Maria gestured to tell them to stop the van so they could make a call.<br><br>
+
+“Terry bro, I need a…”<br>
+“You need a?”
+“Phone call. Private matter. We need to call our parents. Can we get out.”<br>
+The van pulled over. The two got off, and they got a good distance between the van, and called Adrian.
+“They changed their route, nab them in about half-an-hour. Are they suspicious?” Adrian asked them.<br>
+“Not at all, sir.”<br>
+“Hope your badge and guns are safe.”<br>
+Jules patted his pockets. The gun and his badge were there. Maria did too. She felt her gun, but her badge.. Her badge… was not with her.<br><br>
+
+Back in the van, Yasir noticed a shine from the floor. He picked it up. It was a badge. A POLICE badge. MARIA’S police badge.<br>
+“TERRY DRIVE.”<br>
+“What about them?”<br>
+“They’re god damn officers. DRIVE NOW!”<br>
+The van took off. Jules noticed this, and declined the call with Adrian. The two took out their guns and aimed for the wheels. They managed to hit both back tires. The van came to a halt. The three took off - Terry and Yasir in one direction, Alexa in the other.<br><br>
+
+Jules went after the males, while Maria went after Alexa.<br><br>
+
+Jules closed in on Terry, who was a bit separated from Yasir, and pulled him down. He attempted handcuffing him, but Yasir brought Jules down along. Jules managed to break free of Yasir’s grasp, and tried to punch him. He landed one, but the joy was short lived as his hands were tied back by Terry, who had managed to creep in behind.<br><br>
+
+Yasir seized the opportunity and drove his fists into Jules’ body, <br>
+One to his lungs,<br>
+One to his stomach,<br>
+And one more to his stomach.<br>
+All light was knocked out from Jules. He vomited blood out, while blood drooled from his mouth and onto the garden patch below. One more punch, and he is as good as dead. He would have been, if not for the gun shots on either one of Terry’s and Yasir’s legs. They came down in pain, and Maria handcuffed them. She had managed to bring down Alexa, and now the rest two.<br><br>
+
+“Sir?” She contacted Adrian.<br>
+“What the hell’s going-”<br>
+“We brought them down. The products have been seized.”<br>
+“Wait. We are arriving.”<br><br>
+
+<h3> 16 HOURS LATER </h3><br>
+“ It is because of the bravery of this young bright girl and her accomplice, we were able to break the illegal smuggling of weapons.” Et addressed in a ceremony held the next day, “Ladies and gentlemen, Ms. Maria!”<br>
+Maria was called up. She accepted her medal, and certificate, and when the press demanded for a photo, she mumbled to her boss,<br>
+“Sir, why the need for a medal?”<br>
+“You managed a top score case with ease.” Et mumbled back, barely moving his lips and still smiling for the photos.<br>
+“How’s Jules?”<br>
+“He’s better now, thanks to your bravery.”<br>
+A last photo was clicked, her image was all over the papers.<br><br>
+
+
+
+
+    <a href="https://quickreadsoriginal.github.io/QROfficial/github.html" class="btn"> Back</a>
+  </main>
+</body>
+</html>
