@@ -1,169 +1,155 @@
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale>
-  <meta name="description" content="Quick Reads - Short Stories for Everyone" />
-  <title>The Carter Case</title>
-  <style>
-    :root{
-      --bg:#f3f4f6;
-      --card:#ffffff;
-      --accent:#0b63d6;
-      --muted:#6b7280;
-      --shadow: 0 6px 18px rgba(11,12,13,0.08);
-      --radius:12px;
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
-      background:var(--bg);
-      color:#111827;
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-    }
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reading | The Carter Case</title>
 
-    header{
-      background:#0b1220;
-      color:white;
-      padding:28px 16px;
-      text-align:center;
-    background-color:red
+<style>
+:root {
+  --primary: #6366f1; /* Your signature purple */
+  --bg-gradient: linear-gradient(-45deg, #f5f7fa, #c3cfe2, #e2ebf0, #cfd9df);
+  --card-bg: rgba(255, 255, 255, 0.7);
+  --text: #1f2937;
+  --glass-border: rgba(255, 255, 255, 0.4);
 }
 
+body.dark {
+  --bg-gradient: linear-gradient(-45deg, #0f172a, #1e1b4b, #2e1065, #020617);
+  --card-bg: rgba(30, 41, 59, 0.7);
+  --text: #f8fafc;
+  --glass-border: rgba(255, 255, 255, 0.1);
+}
 
-    header h1{margin:0;font-size:28px;letter-spacing:0.4px}
-    header p{margin:6px 0 0;color:#bfc7d6}
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
 
-    main{
-      max-width:960px;
-      margin:28px auto;
-      padding:0 16px 60px;
-    }
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: var(--bg-gradient);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: var(--text);
+  transition: all 0.4s ease;
+  padding-bottom: 50px;
+}
 
-    .card{
-      background:var(--card);
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
-      padding:20px;
-      margin-bottom:18px;
-      overflow:visible;
-    }
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 
-    .story-header{
-      display:flex;
-      align-items:center;
-      gap:12px;
-      justify-content:space-between;
-    }
-    .title-row{
-      display:flex;
-      align-items:center;
-      gap:12px;
-    }
-    h2.story-title{
-      margin:0;
-      font-size:20px;
-    }
-    .meta{
-      color:var(--muted);
-      font-size:13px;
-    }
+.glass {
+  background: var(--card-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+}
 
-    /* rating stars */
-    .stars{
-      display:inline-flex;
-      gap:4px;
-      align-items:center;
-      user-select:none;
-    }
-    .star{
-      width:20px;
-      height:20px;
-      display:inline-block;
-      cursor:pointer;
-      transform-origin:center;
-      transition:transform .12s;
-    }
-    .star svg{width:100%;height:100%;display:block}
-    .star:hover{transform:scale(1.08)}
-    .rating-value{
-      margin-left:8px;
-      color:var(--muted);
-      font-weight:600;
-      font-size:14px;
-    }
+/* STORY HEADER BOX */
+.story-header-box {
+  background: var(--primary);
+  background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+  color: white;
+  padding: 30px 20px;
+  border-radius: 0 0 30px 30px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3);
+  margin-bottom: 25px;
+}
 
-    .story-body{
-      margin-top:14px;
-      line-height:1.65;
-      color:#1f2937;
-      white-space:pre-wrap;
-    }
+.story-header-box h1 { margin: 0; font-size: 28px; font-weight: 900; letter-spacing: -0.5px; }
+.story-header-box p { margin: 5px 0 20px; opacity: 0.9; font-weight: 500; font-size: 14px; }
 
-    /* comments */
-    .comments{
-      margin-top:16px;
-      border-top:1px dashed #e6e9ef;
-      padding-top:14px;
-    }
-    .comment{
-      margin-bottom:10px;
-      background:#f8fafc;
-      padding:8px 10px;
-      border-radius:8px;
-      font-size:14px;
-      color:#111827;
-    }
-    .comment small{color:var(--muted);display:block;font-size:12px}
+/* PHASE NAVIGATOR (Rounded Rectangles) */
+.phase-nav {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 5px 10px 15px;
+  scrollbar-width: none; /* Hide scrollbar Firefox */
+}
+.phase-nav::-webkit-scrollbar { display: none; } /* Hide scrollbar Chrome */
 
-    .comment-form{
-      display:flex;
-      gap:8px;
-      margin-top:8px;
-    }
-    .comment-form input{
-      flex:1;
-      padding:8px 10px;
-      border-radius:8px;
-      border:1px solid #e6e9ef;
-      font-size:14px;
-    }
-    .btn{
-      background:var(--accent);
-      color:white;
-      border:none;
-      padding:8px 12px;
-      border-radius:8px;
-      cursor:pointer;
-      font-weight:600;
-    }
-    .btn:active{transform:translateY(1px)}
-    footer{
-      text-align:center;
-      padding:20px 16px;
-      margin-top:18px;
-      color:red;
-      background:#0b1220;
-      font-size:14px;
-    }
+.nav-item {
+  flex: 0 0 auto;
+  padding: 8px 16px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  transition: 0.3s;
+}
 
-    /* small view */
-    @media (max-width:520px){
-      header h1{font-size:20px}
-      .star{width:18px;height:18px}
-    }
-  </style>
+.nav-item.current {
+  background: white;
+  color: var(--primary);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* CONTENT AREA */
+.content-card {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 24px;
+  line-height: 1.8;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 35px;
+  height: 35px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  background: rgba(255,255,255,0.2);
+  color: white;
+}
+
+</style>
 </head>
+
 <body>
-  <header>
-    <h1>The Carter Case</h1>
-  </header>
 
-  <main id="main">
-    <!-- The Carter Case -->
+<div class="story-header-box">
+  <div class="theme-toggle" onclick="toggleDark()" id="themeIcon">🌙</div>
+  <a href="index.html" class="back-btn" style="color:white">← Back to Library</a>
+  <h1>The Carter Case</h1>
+  <p>Phase 1 • Crime & Thriller</p>
 
-PART I: MURDER IN THE OUTBACKS<br><br>
+  <div class="phase-nav">
+    <a href="#" class="nav-item current">Carter Case</a>
+    <a href="#" class="nav-item">Pendulum Clock</a>
+    <a href="#" class="nav-item">The Gun</a>
+    <a href="#" class="nav-item">Rookie Mission</a>
+    <a href="#" class="nav-item">The Hunt</a>
+  </div>
+</div>
+
+<main style="padding: 0 16px;">
+  <div class="glass content-card">
+    PART I: MURDER IN THE OUTBACKS<br><br>
 
 A scream. A thud. Police sirens going their usual rhythmic tone of 'Wee Woo'- loud enough to wake any sleeping,
  child, and the annoying chatter, not to mention that police sirens were equally annoying too, were the sound of reporters asking the very set of questions they always do. These were the sounds the residents near the house of Mrs. Evelyn Carter- Canning city's mayor, heard, around 6 in the morning on the dreadful date of June 4th. And if it wasn't obvious enough, Mrs. Carter had fallen two stories to her death and, thus, the conundrum.<br><br>
@@ -418,9 +404,23 @@ Arthur stayed low for a few months before becoming a detective at a trusted agen
 It was a fairy tale ending for both the city of Canning, and the the two that fled the city. <br><br>
 
 <hr>
+    <hr style="border: 0; border-top: 1px solid var(--glass-border); margin: 20px 0;">
+    <p style="text-align: center; opacity: 0.6; font-size: 14px;">End of Chapter 1</p>
+  </div>
+</main>
 
+<script>
+function toggleDark() {
+  const isDark = document.body.classList.toggle('dark');
+  document.getElementById('themeIcon').innerText = isDark ? '☀️' : '🌙';
+  localStorage.setItem('qr-dark', isDark);
+}
 
-    <a href="https://quickreadsoriginal.github.io/QROfficial/github.html" class="btn"> Back</a>
-  </main>
+if(localStorage.getItem('qr-dark') === 'true') {
+  document.body.classList.add('dark');
+  document.getElementById('themeIcon').innerText = '☀️';
+}
+</script>
+
 </body>
-                                                                                                                                                                                                                                </html>
+                                                                                                                                                                                                                   </html>
