@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reading | The Curse: Origins</title>
+
+<style>
+:root {
+  --primary: #6366f1; /* Your signature purple */
+  --bg-gradient: linear-gradient(-45deg, #f5f7fa, #c3cfe2, #e2ebf0, #cfd9df);
+  --card-bg: rgba(255, 255, 255, 0.7);
+  --text: #1f2937;
+  --glass-border: rgba(255, 255, 255, 0.4);
+}
+
+body.dark {
+  --bg-gradient: linear-gradient(-45deg, #0f172a, #1e1b4b, #2e1065, #020617);
+  --card-bg: rgba(30, 41, 59, 0.7);
+  --text: #f8fafc;
+  --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: var(--bg-gradient);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: var(--text);
+  transition: all 0.4s ease;
+  padding-bottom: 50px;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.glass {
+  background: var(--card-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+}
+
+/* STORY HEADER BOX */
+.story-header-box {
+  background: var(--primary);
+  background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+  color: white;
+  padding: 30px 20px;
+  border-radius: 0 0 30px 30px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3);
+  margin-bottom: 25px;
+}
+
+.story-header-box h1 { margin: 0; font-size: 28px; font-weight: 900; letter-spacing: -0.5px; }
+.story-header-box p { margin: 5px 0 20px; opacity: 0.9; font-weight: 500; font-size: 14px; }
+
+/* PHASE NAVIGATOR (Rounded Rectangles) */
+.phase-nav {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 5px 10px 15px;
+  scrollbar-width: none; /* Hide scrollbar Firefox */
+}
+.phase-nav::-webkit-scrollbar { display: none; } /* Hide scrollbar Chrome */
+
+.nav-item {
+  flex: 0 0 auto;
+  padding: 8px 16px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.nav-item.current {
+  background: white;
+  color: var(--primary);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* CONTENT AREA */
+.content-card {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 24px;
+  line-height: 1.8;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 35px;
+  height: 35px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  background: rgba(255,255,255,0.2);
+  color: white;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="story-header-box">
+  <div class="theme-toggle" onclick="toggleDark()" id="themeIcon">🌙</div>
+  <a href="index.html" class="back-btn" style="color:white">← Back to Library</a>
+  <h1>The Curse: Origins</h1>
+  <p>Phase 2 • Horror Mystery</p>
+
+   <div class="phase-nav">
+    <a href="#" class="nav-item">The Cave Of The Dead</a>
+    <a href="#" class="nav-item">The Curse</a>
+    <a href="#" class="nav-item">The Curse: Chapter 0</a>
+    <a href="#" class="nav-item current">The Curse: Origins</a>
+  </div>
+</div>
+
+<main style="padding: 0 16px;">
+  <div class="glass content-card">
+   <!--The Curse: Origins-->
+<b>PROLOGUE: ANOTHER ONE OF GRANDMA’S TALES ABOUT THE DEVIL</b><br><br>
+
+It was a time when the Devil’s rule carried out in the form of kings and queens, with their greedy eyes set for chests filled with rubies and gold coins, assuring them infinite wealth. Following such atrocities and the suffering of the poor, the Gods challenged the beasts of the Undead Realm, led by the Devil himself. The beasts were banished. The devil lost. As a last resort, the Devil placed himself in an untouched realm, waiting for the right mind to inhabit. The realm of unknown wonders: The Mortal Realm.<br><br>
+
+ It was at this chaotic time that the Realm of Gods decided to send out one of their own pieces into the fragile Mortal Realm, a realm that carried out the policies of the now banished Devil. Thus, the birth of The Creator took place in a small cave.<br><br>
+
+The Creator—so they say—took form from an explosion of a dying star in the said cave. The Creator had neither a definite body, nor a defined age. It was said that he took the form of a wise old man that had a transparent, cloud-like body with the head of the wisest men in the Realms. The Creator had been created for the sole purpose of keeping checks on all the Realms.<br><br>
+
+For the Gods’ Realm, he created a set of twin angels: Puritus and Deterus. One gentle and forgiving, the other lenient on handing justice.<br>
+For the Undead Realm, he created Jirusa, a half-snake creature with the head of a woman on the body of a snake that was to keep chaos erupting from the Realm.<br><br>
+
+Time passed on as it did in the Gods’ Realm, The Creator, having fixed the Realm, now looked beneath him. He saw how people lived in the Mortal Realm, a Realm he overlooked and passed off as unfixable. There he saw men and women and children of colour living in muds and dirt, while the rich and powerful, in their gold and splendor, sat in cotton cushions placed on silver thrones and ate the livestock of the poor.<br><br>
+
+The Creator—having fixed all life on the Immortal Realms—was unhappy the way he left the blue realm. With his everbinding knowledge and power, he created a guardian for the Mortal Realm. The Creator advised The Guardian, Kaast, to live among the poor, act as their protector; as their guardian.<br><hr>
+
+<b>PART I: THE GUARDIAN</b><br><br>
+
+The village people gathered at the foothills of the mountain, at the crack of dawn, to harvest their crops after the wait of an year. At these parts of the land (the land being barren and dry, with no moisture) the plants needed utmost care. <br><br>
+
+It was—according to local lore—that the king of the West, so unhappy with the people’s produce, and their ignorance of their low-ball agriculture, prayed for the Undead Gods to give the people an unending plethora of desert-like environment. Soon after, the jungle burned down, the water became a drink for the clouds, and many died. A drought had occurred. A famine had wiped off half the people from the face of the small rural village.<br><br>
+
+The people carried baskets for around ten miles upwards, trying not to faint with the intense humid and at the same time dry atmosphere of the place. It was mostly women, but there were also a couple of young men that climbed with them. They reached the place, but they were not the first there.<br><br>
+
+At the first footstep, the crops were burned. At the second, lizards, snakes unleashed onto the green grass, and at the final one, a dangerous fume released from within the soil.<br><br>
+
+The people had their foods diminished. They were now helpless.<br><br>
+
+Together, the farmers marched another twenty miles to the king’s house.<br><br> 
+
+“The King of the West.  He did this,” exclaimed the king as he heard the news. This hadn’t been the first attack of the day. The rivers were filled with animal carcasses. The stables and barns were burned. <br><br>
+
+“An act of cowardice! He is surely planning an attack on us!” The minister warned the king, “My Lord, we shall face this with strength!”<br><br>
+
+Soon, the day of the predicted attack had fallen on the people. Their bravery, though, was defeated. The King of the West  defeated the king with his improved warfare tactics. Placing the weakened king on a rock in front of the king’s courthouse, the Western adversary raised his knife, and beheaded his rival, spilling the king’s blood onto his own Eastern navy-blue flag.<br><br>
+
+At the same time, inside a sawmill, a woman gave birth. There was something peculiar about the child that had been born. He was born—as per the witnesses—with a ring of purity around his head. He neither wailed, nor did he kick his legs up in panic. It was almost like he was ready for this. It came like a duty to him.  He was named Custos.<br><hr>
+
+<b>PART II: A NEW REIGN OF THE SUN KISSED EMPIRE</b><br><br>
+
+A decade passed. Custos grew up in the largest province in the country as an orphan, with his father killed in battle and his mother dying in childbirth.<br><br>
+
+He grew up as the children of farmers who had a son, and the other daughters killed by the tyrant authority of the King, who believed that no one should bear more than two daughters, and if it had been the case, the daughters would be killed. Their son, Herend, was the only real friend that Custos had. The mischievous pair would target the Western people, stealing their silver or gold Urbes (the coins brought to the land by the king with his new authority) whenever they weren’t looking.<br><br>
+
+It was one such lousy day, where they had their pockets with at least five Urbes that they eyed down a man who had a knack for scaring the poor sellers trying to make a living.<br><br>
+
+“2 Urbes! For this! I got this for 1 in the Bay from the Dutch. You got this from them, don’t ya? I’ll call the King here and he will throw you down the well of the cursed, where your old useless king lay now! Do you want that!?”<br><br>
+
+The two boys got into action. Herend walked up to the man, while Custos tip-toed behind the man.<br><br>
+
+“Mister,” Herend asked the man, “do you know the Dutch? My father works there.”
+Custos grabbed at the little pouch that the man was carrying, picking out the rest of the Urbes, until all that had been left was a cobweb.<br><br>
+
+<b><u>BARK!</u></b><br><br>
+
+Custos flinched. He wasn’t sure if it was the man who barked, or if it was an actual dog behind them. The latter guess turned out to be right.<br><br>
+
+The man turned back with a finch, a pinch of doubt in his face. His face reddened with anger and picked the two boys in anger by their collars before flinging them at the legs of his carriage horses. The Urbes flung out of Custos’ hand falling by the man’s legs. He looked at them astonishingly.<br><br>
+
+“These slaves! Destitutes! They robbed me!”<br><br>
+
+The argument got into a halt when the king’s arrival was made known. An elephant blocked the sun for the boys, with the devilish shadow of the king falling onto the sand beside them.<br><br>
+
+The King got off his high-raised carriage.<br><br>
+
+“Such wretched screaming!” He raised his voice in anger. “If it weren’t for the disgusting indigent boys! Lucky you hadn’t died young men!”<br><br>
+
+He gave into a moment of thought, fiddling with the golden tiger-skinned robe.<br><br>
+
+“Guards.  for their punishment of theft—having the courage for thieving a higher order—let them be sent into the palace prisons! Never to be left free!”<br><br>
+
+The boys pleaded, holding the legs of the King, which was put to a stop by the guards carrying them away on a horse back—the cries blocked out by the disgusted curses of the king at the impoverished fools, trying to resort to such means. The boys were never to be freed again.<br><hr>
+
+<b>PART III: A MISERY IN THE MIDST</b><br><br>
+
+The king sat at the top of the long glass table. He sat there disgusted, with his wealth flashing and blinding the eyes of the beggars. Any conversation with him was cut short by his deafening shout. The poor were taking the wealth away from those who earned it. He had to stop it.<br><br>
+
+“My Lord. What is it that bothers you on such a splendid evening. You rule the biggest province in the country. You have everything at your command. Your people love you. What is it, My Lord?”<br>
+“It is something far more sickening. The needy, they are resorting to such relentless, nauseating means to deprive me of my strength and power and gold.”<br>
+“It is nothing of that kind, My Lord. I assure you.”<br>
+“You mean to tell me my statements are meaningless?” He asked, with a snap of frustrating anger in his voice.<br>
+“No.”<br>
+"You have not grown to have the authority to govern me or my authorities, you incompetent swine! I want the needy to die. Poison their crops. Behead the men and bring me their heads. Set fire to the cattle. Let them know that such mere animosites have—and deserve—consequences!”<br><br>
+
+The death of night, where the crickets stopped their search of their ant friends sensing danger. The horses, carrying the king’s soldiers, rode into the village hall. Dozens of them surrounded the farms, into which the soldiers threw a lit piece of wood, burning the wheat into a crisp.<br><br>
+
+Another dozen rode into the cattles and barns with torches and threw the fire into the hay inside the barns and stables. The cows, sheep, pigs and yaks all broke free of their wooden stables and ran for the exit of the village. Some were struck with a knife, others managed to orchestrate their escape.<br><br>
+
+The conundrum created had woken the people. The men exited the houses to see what the ear-piercing sound was all about. The soldiers scooped in and dragged them out of their houses.<br><br>
+
+They lined the men against an old banyan tree while the women and children were held locked in the houses, denying them escape.<br><br>
+
+A horn sounded and a soldier began to speak.<br>
+“Attention, the King wants to send his regards to announce the consequences of an idiotic act of that such as robbing the rich. May this night be the night that the King’s men teach you some manners, starting with this.”<br><br>
+
+He rolled up the scroll and unsheathed a sword from his hip and lined it against the man’s head. Ignoring his pleas and cries, the soldier pressed down. Blood splat onto the hanging roots of the tree.<br><hr>
+
+<b>PART IV:THE PROTECTOR</b><br><br>
+
+The King, with no knowledge of the success of his ideology sat in his room, contemplating the positives that this would give him, which he admitted, was nothing. Deep within him, so deep down, he was a weak, fragile and scared mortal being, run by the everlasting greed that he produced in his reign. Nonsense! What is he thinking? This is nothing like that of a proud king would think.<br><br>
+
+The doors clashed open, breaking his cloud of thoughts into fragments that dropped onto the ground. It was a soldier panting, holding out a smile for the king to make out the good news that he had brought with him.<br><br>
+
+“My Lord! You have brought fear to the peasants! We have killed all their men! All Hail the King of the West!”<br><br>
+
+A grin struck the king’s face. His ugly face became uglier and dismembered with each inch of his widened lips. He rose from his throne and strided into the prisons. There, he picked up a sleeping  Custos by the collar, dragging him into his chariot, ordering the driver to descend into the center of helpless madness.
+<br><br>
+“You learn with time, boy,” He said, with the grin still shining on his face, “that you do not merely mess with power. You either destroy it, or be smushed into simple atoms, where no cry of yours will reach the ears of the Gods that will welcome you at the time of your meaningless death!”<br><br>
+
+They reached the village. The king dragged the boy and flung him into the front of the fires. The king  enjoyed the spectacle as he saw the face of the boy turn sickened and pale in the face of the fire. Custos saw the blood-red roots of the banyan tree, upon which lay a dozen headless men, covered in shame.<br><br>
+
+The boy looked into his hands, the dirt covered hands were the sole reason for this massacre that he had caused.<br><br>
+
+The king walked beside him, leaned over and whispered into his ears, “You will see the sweet fruit of poisoned vengeance. Your weak, and suffering village will see its demise today! Now!”<br><br>
+
+He walked over to the tree, and placing his foot on one of the men, he announced to his guards to,<br>
+
+“Kill them all!”<br><br>
+
+Custos was shaken. Unable to move. Unable to talk. Unable to think.<br><br>
+
+No thoughts ran in his mind.<br>
+<p style="display: block; text-align: center; color: green;">Protect the people!</p><br>
+
+He surrendered to the tyrant, whose shadow ate him whole as he crouched in the ground.<br>
+
+<p style="display: block; text-align: center; color: green;">Kill the fool!</p><br>
+
+He wiped the tears from his eyes. For there was nothing to do.<br>
+
+Nothing, but to end the suffering of the people himself.<br>
+
+<p style="display: block; text-align: center; color: green;">Alas, Kaast he has risen from ruins.</p><br>
+
+The boy grew ten times his size, covering the full moon with his appearance, challenging the king in his own playing field: the field of evil and radicality. The king shuddered, for what he saw before him was not a weak wailing child, but a creature, his white flesh being its hide, its face like a reindeer without its skin, with its skull showing pain, and its body resembled that of the most wicked, and the most ugliest wild animal of the forest, and at the same time, it showed the truth in chaos displaying from this beast of the realm. It was God’s own guardian. The distributor for Karma itself.<br><br>
+
+It pounced his claw in the soldiers guarding the house, crushing the mortal bodies of the unfit and crushing them into slender bits of flesh. The king dropped his sheath, stricken with fear of this unknown holy beast, who now stared right into his eyes. With its sharp nails raised against the king’s body, the beast struck, his nails separating the brain of the mastermind with the controlled parts. The flag burned in the vengeance of the Gods.<br><br>
+
+The people saw it transform back to the boy. A ring of fire burned around him as he stood up and met with the eyes of the people. The people, who had gained nothing from this, except burned crops and the prize of being orphans and widows, met the boy with absolute disgust in their faces. They moved farther as the boy approached.
+<br><br>
+Herend!<br>
+The thought struck him. His friend was still left. He ran to the golden castle, ignoring the absence of humans in the palace and made way into the prison cell. There he was, sat against the prison wall, not moving, not breathing and his hand against the bloodied hole filled with a silver knife. As the pure blood dripped into the ground, Custos again returned to the helpless feeling. He ran back to the village. With nowhere to sleep, he had to resort to the forests with its beasts and birds which had run away in the duration of the episode.<br><hr>
+
+<b>PART V:A LESSON IN THE MORTAL REALM</b><br><br>
+
+The boy was now met with agony and fear. No one dared to come close to him. The boy was left  alone to die alone.<br><br>
+
+In this matter of weakened jestering, he saw—-while staring into a pond—the shining piece of a red stone. With no fish in the pond he made a dive for it. <br><br>
+
+The stone was guarded by a thin string-like fleshy structure that seemed to burn anything that was fed into it. He gathered courage and drove his hands—as painful as it was—into the stone. His eyes shut close as he touched the stone and opened back again, this time, his eyes jewel-like.<br><br>
+
+He now stood in a red land, the skies split into multiple pieces and the hot soil burning the withering flowers. WIth fire burning the bodies of all the remains of the living. He saw a familiar sight. As his eyes adjusted into this dream-like state, he saw the banyan tree in all its glory, but with a symbol that denoted the most powerful vengeant anti-version of The Creator. He sat in front of it.<br><br>
+
+>!-- It is to my knowledge, My Child. I know the suffering. I too have been through this suffering. And now, I have recollected myself. A period of recollection that led to the birth of a senseless creator.<br><br>
+
+<p style="display: block; text-align: center; color: green;">It is not for vengeance you were made for, Custos. Know, and remember your purpose.</p><br>
+
+<p style="display: block; text-align: center; color: red;">The voices, it hurts, doesn’t it? I know it does.</p><br>
+
+<p style="display: block; text-align: center; color: green;">Do not let the failure rewrite your mind.</p><br>
+
+<p style="display: block; text-align: center; color: red;">This stone marks my death. It also marks my rebirth.</p><br>
+
+<p style="display: block; text-align: center; color: green;">Do not lend your soul to the lesser known.</p><br>
+
+<p style="display: block; text-align: center; color: red;">After a painful century, you are the only one fit to have listened to me. Join me, My Child, in fighting the people.</p><br>
+
+<p style="display: block; text-align: center; color: green;">Know your purpose!</p>
+<br>
+<p style="display: block; text-align: center; color: red;">Defy the senseless argument! Do you wish to join me?</p><br>
+
+<p style="display: block; text-align: center; color: green;">Do not descend into Darkness, Custos.</p><br>
+
+<p style="display: block; text-align: center; color: red;">Do you?</p><br><br>
+
+<i>”Yes. I wish to fight back. I wish to make them pay for their stupidity. I wish to make them my subjects. I wish to straighten their rules.”</i><br><br>
+
+
+The village people gathered in the town hall marked by a bronze, rusted bell. Suddenly, the earth shook. The bell tremored. The plates split up. The trees fell. Darkness fell on them. They saw in the far-off distance that marked the end of the forest, a rugged, fleshy, reddish, demonic figure approaching them, with antlers popping out of its head, detailed by screaming skulls.<br><br>
+
+The people halted the panicked state and ran from the village, sliding down the hill on top of which they were situated. The figure reached the people. He stared into the fearful, disgusting, helpless, arrogant faces and saw them, as they tried running downhill with children in their hands. It raised its leg and put it on the people.
+<br><br>
+The figure attained what the king strived for. An end to arrogant, helpless peasantry.<br><br>
+
+The land opened up. As the soil soaked the blood of the fallen, the creature fell into the hellish corners of the Realms, where it dried out, transforming into a thin pale like creature. As it gathered its consciousness, he noticed a sight of a woman, in the body of a snake, and the face of a red pale hellish woman, who now bowed before him as a faithful servant.<br><hr>
+
+<b>PART VI: A LESSON IN THE GOD’S REALM</b><br><br>
+
+The Creator sat in the Realm of Gods, surrounded by the purest of the Gods.<br><br>
+
+“What do You seek to do now, Creator?”<br>
+“He has attained a place in the land of the Undead, where he will rot until his last breath.”<br>
+“Is it safe? Given his infinite knowledge of power? Will he not find an escape?”<br><br>
+
+
+<p style="display: block; text-align: center; color: red;">”Oh Holy Lord, I assure you of your attainment of peace. Place yourself where he was born, for he now has no control over you. Oh Holy Spirit, for you now attain infinite knowledge. Oh Holy Lord, bring the rule over the insignificant Mortals as his successor. Bring glory back to us.”</p><br><br><br>
+
+
+
+In the realm of the mortal, The Creator put the fragment of his success in the stomach of a lion, for only the bravest attains it and uses it for the good-will of the people.<br><br>
+
+Eventually, someone did attain the endless knowledge of banishing the demon, and giving form to the Servant.<br><br>
+
+The Demon too had a trick up in his land, placing himself in a lamp, to look to the wishes of what was the most helpless king of all of Asia.<br><br>
+
+For the need of his own power, the Demon persuaded the king to sacrifice his noble people by throwing them into a big fire that was started in the same opening that his Creator had been born in. <br><br>
+
+The Servant was summoned. Seeing the fall of the kingdom, She did the needful. The energy of the demon clashed into a deeming orb of energy. Through endless trickery, he made the energy a way for looking to symbiosis with anyone that had touched the orb, in order to challenge the Realm of the Gods with his chaos further more, as a sense of meaningless revenge.<br><br>
+
+The first instance of the energy clash was a failure. His chance of occupying a wealthy man was  deemed a failure with the knowledge of the Servant that had been passed down, that would lock him in his home for all time to come.<br><br>
+
+The second, a team of unprepared humans. For his limitations, the demon sent his faithful servant, who almost made it out, only to be banished into nothingness by The Creator's guardians, Puritus and Deterus, that banished her into nothingness, marking failure for the Undead Realm again.<br><br>
+
+After an age of waiting, the Demon, now prepared, inhabited the body of a young girl, killing her mortal conscious, and occupying the hollow space. The demon now saw himself victorious, but the heritage of the fragments of the Servant banished him, forever, into his Hell, which he destroyed after aeons of suffering. The Gods won.  Evil lost. <br><br>
+
+But, the Evil carried out in one realm. A realm of familiarity. A realm mortals call home. <br>
+
+<B>LA FIN<b><br><hr>
+
+
+    <hr style="border: 0; border-top: 1px solid var(--glass-border); margin: 20px 0;">
+    <p style="text-align: center; opacity: 0.6; font-size: 14px;">End of Phase 2</p>
+  </div>
+</main>
+
+<script>
+function toggleDark() {
+  const isDark = document.body.classList.toggle('dark');
+  document.getElementById('themeIcon').innerText = isDark ? '☀️' : '🌙';
+  localStorage.setItem('qr-dark', isDark);
+}
+
+if(localStorage.getItem('qr-dark') === 'true') {
+  document.body.classList.add('dark');
+  document.getElementById('themeIcon').innerText = '☀️';
+}
+</script>
+
+</body>
+</html>
